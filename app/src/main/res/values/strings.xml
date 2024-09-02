@@ -1,0 +1,12 @@
+<resources>
+    <string name="title">Sunset di tanah anarki</string>
+    <string name="text1">Superman is Dead</string>
+    <string name="text2">Sunset Di Tanah Anarki</string>
+    <string name="back">back</string>
+    <string name="tombol">tombol</string>
+    <string name="profil">profil</string>
+    <string name="skipnext">skipnext</string>
+    <string name="skipprevious">skipprev</string>
+    <string name="prev">prev</string>
+    <string name="more">more</string>
+</resources>

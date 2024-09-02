@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="8dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/prev" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@id/more"
+        android:layout_toEndOf="@id/prev"
+        android:fontFamily="@font/font_poppins"
+        android:gravity="center"
+        android:text="Sunset di tanah anarki"
+        android:textColor="@color/orange"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="52dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/more" />
+
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/txt_title"
+        android:layout_marginTop="51dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/profil" />
+
+
+    <SeekBar
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_below="@id/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no"
+        android:progressDrawable="@drawable/seekbar"
+        android:padding="4dp"
+        android:layout_height="15dp" />
+
+
+    <TextView
+        android:id="@+id/second_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Superman is Dead"
+        android:textColor="@color/orange2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_poppins" />
+
+
+    <TextView
+        android:id="@+id/third_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_text_view"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sunset di Tanah Anarki"
+        android:textColor="@color/orange"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_poppins" />
+
+
+    <ImageView
+        android:id="@+id/skip_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@id/play"
+        android:importantForAccessibility="no"
+        android:src="@drawable/skipnext" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/skip_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="220dp"
+        android:layout_toEndOf="@id/play"
+        android:importantForAccessibility="no"
+        android:src="@drawable/skipprev" />
+
+</RelativeLayout>
